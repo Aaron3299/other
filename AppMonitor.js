@@ -14,11 +14,11 @@ Modified by Alex
 
 【Quantumult X】
 ————————————————
-30 7-22 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js, tag=App价格监控
+30 7-22 * * * https://raw.githubusercontent.com/Aaron3299/other/main/AppMonitor.js, tag=App价格监控
 
 【Loon】
 ————————————————
-cron "30 7-22 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js, timeout=600, tag=App价格监控
+cron "30 7-22 * * *" script-path=https://raw.githubusercontent.com/Aaron3299/other/main/AppMonitor.js, timeout=600, tag=App价格监控
 
 app可单独设置区域，未单独设置区域，则采用reg默认区域
 设置区域方式apps=["1443988620:hk","1443988620/us","1443988620 uk","1443988620_jp","1443988620|au"]

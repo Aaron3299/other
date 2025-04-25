@@ -5,7 +5,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify) url script-response-body https://github.com/Aaron3299/other/blob/main/Remini.js
+^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify) url script-response-body https://github.com/Aaron3299/other/main/Remini.js
 
 [mitm]
 hostname = *.oracle.bendingspoonsapps.com

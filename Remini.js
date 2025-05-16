@@ -1,11 +1,10 @@
 /*************************************
 更新日期：2024-09-04
 脚本作者：@ddm1023
-电报频道：https://t.me/ddm1023
 **************************************
 
 [rewrite_local]
-^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify) url script-response-body https://github.com/Aaron3299/other/main/Remini.js
+^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify) url script-response-body https://raw.githubusercontent.com/Aaron3299/other/main/Remini.js
 
 [mitm]
 hostname = *.oracle.bendingspoonsapps.com

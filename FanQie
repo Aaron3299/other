@@ -1,35 +1,65 @@
-DOMAIN p6-ad-sign.byteimg.com REJECT
-DOMAIN p9-ad-sign.byteimg.com REJECT
-DOMAIN-SUFFIX byteimg.com DIRECT
-DOMAIN i.snssdk.com REJECT
-DOMAIN i-lq.snssdk.com REJECT
-DOMAIN dig.bdurl.net REJECT
-DOMAIN-KEYWORD zijieapi REJECT
-DOMAIN activity-ag.awemeughun.com REJECT
-DOMAIN mcs.snssdk.com REJECT
-DOMAIN tnc3-alisc1.snssdk.com REJECT
-DOMAIN security-lq.snssdk.com REJECT
-DOMAIN tnc3-aliec2.snssdk.com REJECT
-DOMAIN is.snssdk.com REJECT
-DOMAIN i.snssdk.com REJECT
-DOMAIN v6-novelapp.ixigua.com REJECT
-DOMAIN *novelapp.ixigua.com REJECT
-DOMAIN *default.ixigua.com REJECT
-DOMAIN msync-im1-vip6-std.easemob.com REJECT
-DOMAIN apd-pcdnwxlogin.teg.tencent-cloud.net REJECT
-DOMAIN api.iegadp.qq.com REJECT
-DOMAIN sf3-ttcdn-tos.pstatp.com REJECT
-DOMAIN-SUFFIX pglstatp-toutiao.com REJECT
-DOMAIN-SUFFIX byteorge.com REJECT
-DOMAIN-SUFFIX bytegoofy.com REJECT
-DOMAIN-SUFFIX bytedance.com REJECT
+#脚本功能：番茄去广告
+#更新时间：2025-05-16
+#测试版本：5.6.5/6.2.1
+#降级id：854680019/865224914
+# 进程名过滤（确保模块识别）
+PROCESS-NAME,com.dragon.read,番茄小说
+# 精准域名拦截
+DOMAIN,*default.ixigua.com,REJECT
+DOMAIN,*novelapp.ixigua.com,REJECT
+DOMAIN,360buyimg.com,REJECT
+DOMAIN,activity-ag.awemeughun.com,REJECT
+DOMAIN,ads0-normal-lq.zijieapi.com,REJECT
+DOMAIN,ads1-normal-lq.zijieapi.com,REJECT
+DOMAIN,ads2-normal-lq.zijieapi.com,REJECT
+DOMAIN,ads3-normal-lq.zijieapi.com,REJECT
+DOMAIN,ads4-normal-lq.zijieapi.com,REJECT
+DOMAIN,ads5-normal-lq.zijieapi.com,REJECT
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net,REJECT
+DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
+DOMAIN,api-access.pangolin-sdk-toutiao1.com,REJECT
+DOMAIN,api.iegadp.qq.com,REJECT
+DOMAIN,buysecm.com,REJECT
+DOMAIN,dig.bdurl.net,REJECT
+DOMAIN,i-lq-snssdk.com,REJECT
+DOMAIN,i-lq.snssdk.com,REJECT
+DOMAIN,i.snssdk.com,REJECT
+DOMAIN,is.snssdk.com,REJECT
+DOMAIN,mcs.snssdk.com,REJECT
+DOMAIN,msync-im1-vip6-std.easemob.com,REJECT
+DOMAIN,p6-ad-sign.byteimg.com,REJECT
+DOMAIN,p9-ad-sign.byteimg.com,REJECT
+DOMAIN,security-lq.snssdk.com,REJECT
+DOMAIN,sf3-ttcdn-tos.pstatp.com,REJECT
+DOMAIN,tnc0-aliec1.zijieapi.com,REJECT
+DOMAIN,tnc0-aliec2.zijieapi.com,REJECT
+DOMAIN,tnc0-aliec3.zijieapi.com,REJECT
+DOMAIN,tnc1-aliec1.zijieapi.com,REJECT
+DOMAIN,tnc1-aliec2.zijieapi.com,REJECT
+DOMAIN,tnc1-aliec3.zijieapi.com,REJECT
+DOMAIN,tnc2-aliec1.zijieapi.com,REJECT
+DOMAIN,tnc2-aliec2.zijieapi.com,REJECT
+DOMAIN,tnc2-aliec3.zijieapi.com,REJECT
+DOMAIN,tnc3-aliec1.zijieapi.com,REJECT
+DOMAIN,tnc3-aliec2.snssdk.com,REJECT
+DOMAIN,tnc3-aliec2.zijieapi.com,REJECT
+DOMAIN,tnc3-aliec3.zijieapi.com,REJECT
+DOMAIN,tnc3-alisc1.snssdk.com,REJECT
+DOMAIN,v6-novelapp.ixigua.com,REJECT
+DOMAIN-KEYWORD,zijieapi,REJECT
+DOMAIN-SUFFIX,bytedance.com,REJECT
+DOMAIN-SUFFIX,bytegoofy.com,REJECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
+DOMAIN-SUFFIX,byteorge.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 
-IP-CIDR 49.71.37.101/32 REJECT no-resolve
-IP-CIDR 117.71.105.23/32 REJECT no-resolve
-IP-CIDR 218.94.207.205/32 REJECT no-resolve
-IP-CIDR 117.92.229.188/32 REJECT no-resolve
-IP-CIDR 101.36.166.16/32 REJECT no-resolve
-IP-CIDR 180.96.2.114/32 REJECT no-resolve
+# 🧭 特定 IP 黑名单（静态封锁某些广告节点）
+IP-CIDR,49.71.37.101/32,REJECT,no-resolve
+IP-CIDR,117.71.105.23/32,REJECT,no-resolve
+IP-CIDR,218.94.207.205/32,REJECT,no-resolve
+IP-CIDR,117.92.229.188/32,REJECT,no-resolve
+IP-CIDR,101.36.166.16/32,REJECT,no-resolve
+IP-CIDR,180.96.2.114/32,REJECT,no-resolve
 
 #重写
 ^http:\/\/.+\.byteimg\.com\/ad-app-package url reject
@@ -95,24 +125,46 @@ IP-CIDR 180.96.2.114/32 REJECT no-resolve
 ^https:\/\/www\.gstatic\.cn\/images\/branding\/googlelogo url reject
 ^https:\/\/yyrisk-^httpproxy\.yy\.com\/ url reject
 ^https:\/\/zijieapi\.com\/ url reject
+^https?:\/\/.*\.amemv.com url reject-200
+^https?:\/\/.*\.bdurl\.net\/.*ad.* url reject-200
+^https?:\/\/.*\.bytegecko.com url reject-200
+^https?:\/\/.*\.byteimg.com url reject-200
+^https?:\/\/.*\.ecombdapi.com url reject-200
+^https?:\/\/.*\.ecombdimg\.com\/.*ad.* url reject-200
+^https?:\/\/.*\.fqnovel.com url reject-200
+^https?:\/\/.*\.fqnovelpic.com url reject-200
+^https?:\/\/.*\.oceanengine.com url reject-200
+^https?:\/\/.*\.pangolin-sdk-toutiao\.com\/.*(ad|api|sdk).* url reject-200
+^https?:\/\/.*\.pangolin-sdk-toutiao\.com\/.*(live|ad|api|sdk).* url reject-200
+^https?:\/\/.*\.safebrowsing.apple url reject-200
+^https?:\/\/.*\.snssdk.com url reject-200
+^https?:\/\/.*\.wcp.taobao.com\/.*adstrack.* url reject-200
+^https?:\/\/.*\.zijieapi.com url reject-200
+^https?:\/\/.*\.zijieapi\.com\/.*(ad|api|sdk).* url reject-200
+^https?:\/\/.*pangolin-sdk-toutiao.*\.com\/.* url reject-200
 ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(ad-app-package|ad)\/.+ url reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ - reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ url reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ url reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer url reject
 ^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg url reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ url reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(geturlads|stats|settings)\/ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 url reject
 ^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/trackurllog\/src\/.+ url reject
 ^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad url reject
 ^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ url reject
+^https?:\/\/.+\.snssdk\.com\/api\/ad\/.+ - reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 - reject
 ^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 url reject
 ^https?:\/\/.+\.web\.business\.image url reject
 ^https?:\/\/.+novelapp\.fqnovelvod\.com\/.+\/video\/.+ url reject
 ^https?:\/\/adim\.pinduoduo\.com\/.+\/toutiao\?.+ url reject
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/.* url reject-200
 ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package url reject
-
+^https?:\/\/mcs.snssdk.com url reject-200
 
 #主机名
-hostname =*.pangolin-sdk-toutiao *.pangolin-sdk-toutiao.* *.pstatp.com *.pstatp.com.* *.pglstatp-toutiao.com.* *.pglstatp-toutiao.com gurd.snssdk.com gurd.snssdk.com.* *default.ixigua.com
+hostname =%APPEND%,*.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,*.ecombdimg.com,*.douyin.com,fqnovel.com,fqnovelpic.com,pangolin-sdk-toutiao.com,.pstatp.com,.default.ixigua.com,.360buyimg.com,.zijieapi.com,.buysecm.com,wcp.taobao.com

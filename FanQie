@@ -53,6 +53,200 @@ DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,byteorge.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 
+# 阿里系广告SDK
+DOMAIN,tunion-api.m.taobao.com,reject
+DOMAIN,acs4baichuan.m.taobao.com,reject
+DOMAIN,adashxgc.ut.taobao.com,reject
+DOMAIN,baichuan-sdk.alicdn.com,reject
+
+# 百度广告扩展
+DOMAIN-SUFFIX,adx.baidu.com,reject
+DOMAIN-SUFFIX,mobads.baidu.com,reject
+DOMAIN-SUFFIX,wn.pos.baidu.com,reject
+DOMAIN-SUFFIX,duapps.com,reject
+DOMAIN-SUFFIX,cpro.baidu.com,reject
+DOMAIN-SUFFIX,pos.baidu.com,reject
+DOMAIN,afd.baidu.com,reject
+DOMAIN,als.baidu.com,reject
+DOMAIN,duclick.baidu.com,reject
+DOMAIN,mobads-logs.baidu.com,reject
+DOMAIN,nadvideo2.baidu.com,reject
+DOMAIN,nsclick.baidu.com,reject
+DOMAIN,hm.baidu.com,reject
+DOMAIN,sp0.baidu.com,reject
+DOMAIN-SUFFIX,analysys.cn,reject
+DOMAIN,ark.analysys.cn,reject
+DOMAIN-SUFFIX,talkingdata.com,reject
+DOMAIN,data.talkingdata.com,reject
+DOMAIN,metrics.huawei.com,reject
+DOMAIN,appreport.huawei.com,reject
+DOMAIN-SUFFIX,arms.aliyun.com,reject
+DOMAIN,arms-dashboard.aliyun.com,reject
+DOMAIN-SUFFIX,nedunsec.com,reject
+DOMAIN,log.netease.com,reject
+DOMAIN,track.miui.com,reject
+DOMAIN,analytics.miui.com,reject
+DOMAIN-SUFFIX,getui.com,reject
+DOMAIN,report.getui.com,reject
+
+# > 交管12123
+DOMAIN-SUFFIX,v3.fstats.xyz,REJECT
+DOMAIN-SUFFIX,wss.haoyundmn.com,REJECT
+DOMAIN-SUFFIX,new.xiongzhangad.com,REJECT
+DOMAIN-SUFFIX,alexametrics.com,REJECT
+DOMAIN-KEYWORD,in-page-push,REJECT
+
+# Google广告
+DOMAIN-SUFFIX,google-analytics.com,reject
+DOMAIN,safebrowsing.googleapis.com,reject
+DOMAIN-SUFFIX,googleadservices.com,reject
+DOMAIN-SUFFIX,googleadsserving.cn,reject
+DOMAIN-SUFFIX,googletagservices.com,reject
+DOMAIN-SUFFIX,googletagmanager.com,reject
+DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com,reject
+DOMAIN-SUFFIX,tpc.googlesyndication.com,reject
+DOMAIN-SUFFIX,pagead.google.com,reject
+DOMAIN-SUFFIX,pagead.l.google.com,reject
+DOMAIN-SUFFIX,pagead2.googlesyndication.com,reject
+DOMAIN-SUFFIX,pagead-tpc.l.google.com,reject
+DOMAIN-SUFFIX,mobileads.google.com,reject
+DOMAIN-SUFFIX,googlecommerce.com,reject
+DOMAIN-SUFFIX,blaaaa12.googlecode.com,reject
+DOMAIN-SUFFIX,badad.googleplex.com,reject
+DOMAIN-SUFFIX,afs.googlesyndication.com,reject
+DOMAIN-SUFFIX,afd.l.google.com,reject
+DOMAIN,ads.youtube.com,reject
+
+# 搜狐广告
+DOMAIN-SUFFIX,ad.sohu.com,reject
+DOMAIN-SUFFIX,ads.sohu.com,reject
+DOMAIN-SUFFIX,aty.sohu.com,reject
+DOMAIN,hui.sohu.com,reject
+
+# 红果短剧广告
+DOMAIN-SUFFIX,daikuan.360.cn,reject
+DOMAIN-SUFFIX,xjietiao.com,reject
+DOMAIN-SUFFIX,fqnovelpic.com,reject
+DOMAIN-SUFFIX,jinrong.360.cn,reject
+DOMAIN-SUFFIX,vas-lf-x.snssdk.com,reject
+DOMAIN-SUFFIX,v.smtcdns.com,reject
+DOMAIN-KEYWORD,ad.qznovelvod.com,reject
+DOMAIN-KEYWORD,ad-sign.byteimg.com,reject
+DOMAIN-SUFFIX,ad.redfruitdrama.com,reject
+DOMAIN-SUFFIX,ads.redfruitdrama.com,reject
+DOMAIN-SUFFIX,adservice.redfruitdrama.com,reject
+DOMAIN-SUFFIX,video-ad.redfruitdrama.com,reject
+DOMAIN-SUFFIX,analytics.redfruitdrama.com,reject
+DOMAIN-SUFFIX,monitor.redfruitdrama.com,reject
+DOMAIN-SUFFIX,track.redfruitdrama.com,reject
+DOMAIN-SUFFIX,tracklog.redfruitdrama.com,reject
+DOMAIN-SUFFIX,log.redfruitdrama.com,reject
+DOMAIN-SUFFIX,csjplatform.com,reject
+DOMAIN-SUFFIX,pangle.cn,reject
+DOMAIN-SUFFIX,pangle.com,reject
+DOMAIN-SUFFIX,ad.snssdk.com,reject
+DOMAIN-SUFFIX,ads.snssdk.com,reject
+DOMAIN-SUFFIX,ad.toutiao.com,reject
+DOMAIN,track.snssdk.com,reject
+DOMAIN,event.snssdk.com,reject
+DOMAIN,stat.snssdk.com,reject
+DOMAIN,log.snssdk.com,reject
+DOMAIN,aweme.snssdk.com,reject
+DOMAIN,lf6-cdn-tos.bytecdntp.com,reject
+DOMAIN,lf9-cdn-tos.bytecdntp.com,reject
+DOMAIN,task.redfruitdrama.com,reject
+DOMAIN,activity.redfruitdrama.com,reject
+DOMAIN,wallet.redfruitdrama.com,reject
+
+# 抖音+穿山甲广告埋点拦截
+DOMAIN-SUFFIX,douyin.com,direct
+DOMAIN-SUFFIX,iesdouyin.com,direct
+DOMAIN-SUFFIX,pangolin.snssdk.com,reject
+DOMAIN-SUFFIX,adbyte.snssdk.com,reject
+DOMAIN-SUFFIX,ad.zijieapi.com,reject
+DOMAIN-SUFFIX,ad.oceanengine.com,reject
+DOMAIN-SUFFIX,analytics.bytedance.com,reject
+DOMAIN-SUFFIX,analytics.snssdk.com,reject
+DOMAIN-SUFFIX,applog.snssdk.com,reject
+DOMAIN-SUFFIX,applog.bytedance.com,reject
+DOMAIN-SUFFIX,stat.snssdk.com,reject
+DOMAIN-SUFFIX,stat.bytedance.com,reject
+DOMAIN-SUFFIX,track.snssdk.com,reject
+DOMAIN-SUFFIX,track.bytedance.com,reject
+DOMAIN,ad-be.snssdk.com,reject
+DOMAIN,ad-client.snssdk.com,reject
+DOMAIN,ad-cdn.snssdk.com,reject
+DOMAIN,pangolin-sdk-toutiao.bytedance.net,reject
+DOMAIN,pangolin-sdk-toutiao.snssdk.com,reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject
+DOMAIN-SUFFIX,ad.bytedance.com,reject
+DOMAIN-SUFFIX,zijieapi.com,reject
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,reject
+DOMAIN-SUFFIX,log.snssdk.com,reject
+DOMAIN-SUFFIX,track.toutiaoapi.com,reject
+DOMAIN-SUFFIX,mon.snssdk.com,reject
+DOMAIN-SUFFIX,i.snssdk.com,reject
+
+# 字节&番茄小说广告
+DOMAIN,gurd.snssdk.com,reject
+DOMAIN,splash.fanqienovel.com,reject
+DOMAIN,adapi.fanqienovel.com,reject
+DOMAIN,activity.fanqienovel.com,reject
+DOMAIN,promo.fanqienovel.com,reject
+
+# 汽水音乐去广告
+DOMAIN-SUFFIX,ad.qishui.com,reject
+DOMAIN,adapi.qishui.com,reject
+DOMAIN,update.qishui.com,reject
+DOMAIN,upgrade.qishui.com,reject
+DOMAIN,wallet.qishui.com,reject
+
+# 优量汇（腾讯）
+DOMAIN-SUFFIX,ad.qq.com,reject
+DOMAIN-SUFFIX,adstats.tencentmusic.com,reject
+DOMAIN-SUFFIX,tracking.qq.com,reject
+DOMAIN-SUFFIX,sdkconfig.qq.com,reject
+DOMAIN-SUFFIX,mta.qq.com,reject
+DOMAIN,mta-stat.qq.com,reject
+
+# 第三方分析/埋点
+DOMAIN-SUFFIX,umeng.com,reject
+DOMAIN-SUFFIX,umtrack.com,reject
+DOMAIN-SUFFIX,bugly.qq.com,reject
+DOMAIN-SUFFIX,umengplus.com,reject
+DOMAIN,ut.umeng.com,reject
+DOMAIN,cn.umeng.com,reject
+DOMAIN-SUFFIX,app-measurement.com,reject
+DOMAIN-SUFFIX,doubleclick.net,reject
+DOMAIN-SUFFIX,googlesyndication.com,reject
+DOMAIN-SUFFIX,googleads.g.doubleclick.net,reject
+DOMAIN-SUFFIX,ads.internal.unity3d.com,reject
+DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,reject
+DOMAIN-SUFFIX,unityads.unity3d.com,reject
+DOMAIN-SUFFIX,volcengine.com,reject
+DOMAIN,datastorm-api.volcengine.com,reject
+DOMAIN,report.volcengine.com,reject
+DOMAIN-SUFFIX,sensorsdata.cn,reject
+DOMAIN-SUFFIX,sensorsanalytics.cn,reject
+DOMAIN-SUFFIX,growingio.com,reject
+DOMAIN,growingio-sdk.growingio.com,reject
+
+
+# 通用广告源（误伤请注释）
+DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-KEYWORD,adsdk,REJECT
+DOMAIN-KEYWORD,adtrack,REJECT
+DOMAIN-KEYWORD,log.,REJECT
+DOMAIN-KEYWORD,track,REJECT
+
+# 放行红果短剧核心业务（放在所有拦截最后）
+DOMAIN-SUFFIX,redfruitdrama.com,direct
+DOMAIN-SUFFIX,api.redfruitdrama.com,direct
+DOMAIN-SUFFIX,res.redfruitdrama.com,direct
+DOMAIN-SUFFIX,cdn.redfruitdrama.com,direct
+DOMAIN-SUFFIX,play.redfruitdrama.com,direct
+
+
 # 🧭 特定 IP 黑名单（静态封锁某些广告节点）
 IP-CIDR,49.71.37.101/32,REJECT,no-resolve
 IP-CIDR,117.71.105.23/32,REJECT,no-resolve
@@ -165,6 +359,5 @@ IP-CIDR,180.96.2.114/32,REJECT,no-resolve
 ^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/.* url reject-200
 ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package url reject
 ^https?:\/\/mcs.snssdk.com url reject-200
-
 #主机名
 hostname =%APPEND%,*.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,*.ecombdimg.com,*.douyin.com,fqnovel.com,fqnovelpic.com,pangolin-sdk-toutiao.com,.pstatp.com,.default.ixigua.com,.360buyimg.com,.zijieapi.com,.buysecm.com,wcp.taobao.com

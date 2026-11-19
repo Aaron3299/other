@@ -1,0 +1,30 @@
+# 苹果Ai
+# Siri & Apple Ai核心校验
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,siri.apple.com
+
+# PCC 私有云计算 Relay 核心（AI云端推理）
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+
+# iCloud 连通探测
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,probe.icloud.com
+DOMAIN-SUFFIX,pong.icloud.com
+DOMAIN-SUFFIX,metrics.icloud.com
+DOMAIN-SUFFIX,apple-dns.net
+
+# 地区校验、LS探测
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,dns.apple.com
+
+# ----------天气/App Store ----------
+# DOMAIN-SUFFIX,weatherkit.apple.com,AppleAI
+# DOMAIN-SUFFIX,mzstatic.com,AppleAI
